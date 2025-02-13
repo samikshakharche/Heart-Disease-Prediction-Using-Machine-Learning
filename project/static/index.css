@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(/static/heart.jpg);
+    /* backdrop-filter: blur(50px); */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputs-field input {
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid green;
+    margin-left: 20px;
+    width: 320px;
+    margin-top: 20px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding-left:10px;
+}
+
+.inputs-field input::placeholder{
+    color: aliceblue;
+}
+
+.head{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.button {
+    height: 350px;
+    color: green;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    background-color: green;
+    color: #fff;
+}
+#result{
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+    width: fit-content;
+    background-color: green;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+

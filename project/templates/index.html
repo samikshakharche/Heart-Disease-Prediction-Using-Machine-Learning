@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction - Information</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <div class="container">
+
+        <form action="/predict" method="post">
+
+            
+            <h1 class="head">Heart Disease Prediction</h1>
+            <div class="inputs-field">
+                <input type="text" class="age" name="age" placeholder="Age">
+                <input type="text" class="age sex" name="sex" placeholder="Sex">
+                <input type="text" class="age cp" name="cp" placeholder="CP">
+                <input type="text" class="age bps" name="bps" placeholder="BPS">
+                <br>
+                <input type="text" class="age chol" name="chol" placeholder="Chol">
+                <input type="text" class="age fbs" name="fbs" placeholder="FBS">
+                <input type="text" class="age rest" name="restecg" placeholder="Restegc">
+                <input type="text" class="age thal" name="thalach" placeholder="Thalach">
+                <br>
+                <input type="text" class="age chol" name="exang" placeholder="exang">
+                <input type="text" class="age fbs" name="oldpeak" placeholder="Old peak">
+                <input type="text" class="age rest" name="slope" placeholder="Slope">
+                <input type="text" class="age thal" name="ca" placeholder="CA">
+                <br>
+                <input type="text" class="age chol" name="thal" placeholder="Thal">
+            </div>
+       
+            <div class="button">
+                <button type="submit" onclick="func()" style="height: 45;">Submit</button>
+                <div id="result"><p>{{res}}</p></div>
+            </div>
+        </form>
+
+        </div>
+    </div>
+    <script>
+        let func = ()=>{
+            sessionStorage.setItem("status",1);
+        }
+        document.addEventListener("DOMContentLoaded") = ()=>{
+            sessionStorage.getItem("status")==1?document.getElementById("result").style.display = "block":document.getElementById("result").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
